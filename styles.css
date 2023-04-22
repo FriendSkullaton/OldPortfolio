@@ -1,0 +1,63 @@
+h1 {
+    font-size: 50px;
+    color: #ffdd68;
+}
+
+h2{
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h2, h3 {
+    color: #efcba2;
+}
+
+
+body {
+    background-image:url(./resources/background-cute.gif);
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    background-color: #969387;
+    margin: 20px;
+}
+
+nav ul {
+    display: flex;
+    padding: 5px;
+}
+
+nav li {
+    padding: 5px;
+}
+
+#about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #969387;
+    max-width: 700px;
+    margin: auto;
+    min-height: 800px;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
