@@ -1,6 +1,11 @@
+html {
+    font-family: 'Century Gothic', Arial, Helvetica, sans-serif;
+}
+
 h1 {
-    font-size: 50px;
+    font-size: 70px;
     color: #ffdd68;
+    font-family: 'Homemade Apple', cursive;
 }
 
 h2{
@@ -13,6 +18,8 @@ h3 {
 
 h2, h3 {
     color: #efcba2;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
 }
 
 
@@ -34,11 +41,18 @@ header {
 
 nav ul {
     display: flex;
+    flex-wrap: wrap;
     padding: 5px;
+    justify-content: space-around;
 }
 
 nav li {
-    padding: 5px;
+    padding: 15px;
+}
+
+nav li a {
+    background-color:#efcba2;
+    padding: 10px;
 }
 
 #about {
