@@ -1,5 +1,6 @@
 html {
     font-family: 'Century Gothic', Arial, Helvetica, sans-serif;
+    font-size: 16px;
 }
 
 h1 {
@@ -30,6 +31,8 @@ body {
     animation-fill-mode: forwards;
 }
 
+/* Header Section */
+
 header {
     display: flex;
     flex-wrap: wrap;
@@ -45,6 +48,7 @@ nav ul {
     flex-wrap: wrap;
     padding: 5px;
     justify-content: space-around;
+    list-style: square inside url('./resources/e9ba748b.gif');
 }
 
 nav li {
@@ -66,6 +70,8 @@ nav li a:active {
     background-color:#776651;
 }
 
+/* Main section */
+
 #about {
     display: flex;
     flex-wrap: wrap;
@@ -79,10 +85,30 @@ nav li a:active {
     border: solid 8px #ffdd68;
 }
 
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 600px;
+    text-align: center;
+}
 
-#about img{
+.container img {
+    max-height: 300px;
+    max-width: 300px;
+    border-radius: 50%;
+}
+
+.divider img{
     max-width: 500px;
     max-height: 100px;
+}
+
+.skills img {
+    max-height: 40px;
+    max-width: 40px;
 }
 
 @keyframes fadeInAnimation {
