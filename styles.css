@@ -85,6 +85,12 @@ nav li a:active {
     border: solid 8px #ffdd68;
 }
 
+.container span {
+    color:#ffdd68;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 18px;
+}
 .container {
     display: flex;
     flex-wrap: wrap;
