@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="reset.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
     <title>Contact</title>
 </head>
 <body>
@@ -19,6 +20,26 @@
             </ul>
         </nav>
     </header>
-    
+    <main>
+        <section id="contact">
+            <div class="container">
+                <h2>Some places to find me</h2>
+            </div>
+            <div class="contact-places">
+                <img src="./resources/tombstone-email.png" alt="email">
+                <img src="./resources/tombstone-github.png" alt="github">
+                <a href="https://skullaton.tumblr.com" target="_blank"><img src="./resources/tombstone-tumblr.png" alt="tumblr"></a>
+            </div>
+            <form>
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" required><br>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="enquire">Enquiry:</label><br>
+                <textarea id="enquire" name="enquire" required rows="10" cols="30"></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
 </body>
 </html>
