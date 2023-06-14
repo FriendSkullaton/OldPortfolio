@@ -1,0 +1,18 @@
+/* Graphics page */
+
+summary {
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #efcba2;
+    font-weight:bold;
+    transition: 0.3s;
+}
+
+summary:hover {
+    color: #B3987A;
+}
+
+
+details img{
+    padding: 1px;
+}

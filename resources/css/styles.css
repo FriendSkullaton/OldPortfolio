@@ -106,7 +106,7 @@ nav li a:active {
 
 /* Main section */
 
-#about, #contact, #projects, #graphics, #shrines, #quizzes, #guestbook {
+#about, #contact, #projects, #graphics, #shrines, #quizzes, #writing {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -145,4 +145,13 @@ nav li a:active {
     100% {
         opacity: 1;
      }
+}
+
+footer {
+    background-color:#969387;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
 }
