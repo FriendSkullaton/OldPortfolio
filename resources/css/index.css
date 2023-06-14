@@ -1,0 +1,36 @@
+/* Index page */
+
+.skell {
+    border-radius: 50%;
+    max-height: 300px;
+    max-width: 300px;
+    opacity: .50;
+    transition: 0.3s;
+}
+
+.skell:hover {
+    opacity: 1;
+}
+
+
+.divider img{
+    max-width: 500px;
+    max-height: 100px;
+}
+
+
+.skills img {
+    max-height: 40px;
+    max-width: 40px;
+}
+
+.overlay {
+    background: linear-gradient(to right, rgba(187, 171, 25, 0.7), rgb(239, 203, 162));
+    border-radius: 50%;
+}
+
+
+.skills h4{
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
