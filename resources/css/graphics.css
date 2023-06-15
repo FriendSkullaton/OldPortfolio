@@ -6,6 +6,7 @@ summary {
     color: #efcba2;
     font-weight:bold;
     transition: 0.3s;
+    padding: 15px;
 }
 
 summary:hover {
@@ -15,4 +16,8 @@ summary:hover {
 
 details img{
     padding: 1px;
+}
+
+#graphics h2{
+    margin-bottom: 50px;
 }

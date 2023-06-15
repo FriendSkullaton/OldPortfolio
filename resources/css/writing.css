@@ -1,0 +1,45 @@
+/* Writing page */
+
+#writing h2, #writing h3, #writing h4 {
+    padding: 10px;
+}
+
+#writing p {
+    padding: 2px;
+}
+
+.description {
+    padding-top: 10px;
+}
+
+
+.summary {
+    height: 200px;
+    width: 70%;
+    padding: 10px;
+    border: 2px solid;
+    font-size:125%;
+    color: #000;
+    overflow: auto;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+#writing a {
+    background-color:#efcba2;
+    padding: 10px;
+    transition: 0.3s;
+    border-radius: 30%;
+}
+
+#writing a:hover {
+    background-color:#B3987A;
+}
+
+#writing a:active{
+    background-color:#776651;
+}
+
+#writing img {
+    max-width: 400px;
+}

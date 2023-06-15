@@ -126,6 +126,14 @@ nav li a:active {
     font-weight: bold;
     font-size: 18px;
 }
+
+span {
+    color:#ffdd68;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 18px;
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;

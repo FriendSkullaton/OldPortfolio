@@ -30,7 +30,25 @@
 }
 
 
-.skills h4{
+.skills h4, .interests h4{
     padding-top: 15px;
     padding-bottom: 10px;
+}
+
+.skills {
+    padding-right: 20px;
+}
+
+.interests {
+    padding-left: 20px;
+}
+
+.bottom {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.interests li {
+    padding: 2px;
+    font-weight: bold;
 }

@@ -1,0 +1,14 @@
+/* Quizzes Page */
+
+#quizzes img {
+    max-height: 300px;
+    max-width: 300px;
+    padding: 2px;
+}
+
+.results {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+}
