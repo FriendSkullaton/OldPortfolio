@@ -1,5 +1,17 @@
 /* Index page */
 
+.grid-container {
+    display: grid;
+    grid-template-areas:
+                'updates about about interests'
+                'updates about about skills';
+    gap: 5px;
+}
+
+#about {
+    grid-area: about;
+}
+
 .skell {
     border-radius: 50%;
     max-height: 300px;
@@ -36,16 +48,31 @@
 }
 
 .skills {
-    padding-right: 20px;
+    grid-area: skills;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #969387;
+    border: solid 8px #ffdd68;
+    max-width: 300px;
+    flex-wrap: wrap;
+}
+
+.image-skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .interests {
-    padding-left: 20px;
-}
-
-.bottom {
-    display:flex;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #969387;
+    border: solid 8px #ffdd68;
+    max-width: 300px;
     flex-wrap: wrap;
+    grid-area: interests;
 }
 
 .interests li {
@@ -57,8 +84,13 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: center;
     background-color: #969387;
     border: solid 8px #ffdd68;
-    max-width: 300px;
+    max-width: 200px;
+    max-height: 200px;
+    padding: 10px;
     flex-wrap: wrap;
+    grid-area: updates;
+    overflow: auto;
 }

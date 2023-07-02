@@ -24,45 +24,54 @@
                 <li><a href="quizzes.html">quizzes</a></li>
                 <li><a href="contact.html">contact</a></li>
                 <li><a href="http://skull-aton.123Guestbook.com/" target="_blank">guestbook</a></li>
+                <li><a href="https://ko-fi.com/skullaton" target="_blank">ko-fi</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="grid-container">
         <section id="about">
-            <div class="container">
-                <div class="overlay">
-                    <img src="./resources/index/skell-icon.png" alt="picture of skell" class="skell"><br>
-                </div>
-                <h2><img src="./resources/other/skull1.gif"> About <img src="./resources/other/skull1.gif"></h2><br>
-                <p>Hi, I'm <span>Skell</span>! (<span>They/Them</span>)<br><br>I'm a budding web developer that generally focuses on y2k web aesthetics and recreation.</p><br>
-                <p>In my free time I play video games and write.</p><br>
-                <img src="./resources/other/construction 2.gif"><br>
-                <p>This website is mostly under construction. mind the mess c:</p><br>
-            </div>
-            <div class="divider">
-                <img src="./resources/index/skull-divider.png" alt="Skull Divider">
-            </div><br>
-            <div class="bottom">
                 <div class="container">
-                        <div class="skills">
-                            <h3>Skills</h3>
-                            <h4>Coding</h4>
+                    <div class="overlay">
+                        <img src="./resources/index/skell-icon.png" alt="picture of skell" class="skell"><br>
+                    </div>
+                    <h2><img src="./resources/other/skull1.gif"> About <img src="./resources/other/skull1.gif"></h2><br>
+                    <p>Hi, I'm <span>Skell</span>! (<span>They/Them</span>)<br><br>I'm a budding web developer that generally focuses on y2k web aesthetics and recreation.</p><br>
+                    <p>In my free time I play video games and write.</p><br>
+                    <p>You are Visitor: <span id="hitcount"></span> .</p>
+                </div>
+                <div class="divider">
+                    <img src="./resources/index/skull-divider.png" alt="Skull Divider">
+                </div>
+                <div class="container">
+                    <img src="./resources/other/construction 2.gif"><br>
+                    <p>This website is mostly under construction. mind the mess c:</p><br>
+                </div>
+                </section>
+                
+                <section class="skills">
+                        <h3>Skills</h3>
+                        <h4>Coding</h4>
+                        <div class="image-skills">
                             <img src="./resources/index/html-5.png" alt="html5">
                             <img src="./resources/index/css-3.png" alt="css">
                             <img src="./resources/index/java-script.png" alt="javascript">
                             <img src="./resources/index/github.png" alt="git">
                             <img src="./resources/index/react.png" alt="react">
-                            <h4>Creative</h4>
+                        </div>
+                        <h4>Creative</h4>
+                        <div class="image-skills">
                             <img src="./resources/index/adobe-photoshop-logo.png" alt="photoshop">
                             <img src="./resources/index/premiere-pro.png" alt="adobe premier">
                             <img src="./resources/index/writing.png" alt="writing">
                             <img src="./resources/index/4691225_archiveofourown_icon.png" alt="fanfic">
-                            <h4>Game Dev</h4>
+                        </div>
+                        <h4>Game Dev</h4>
+                        <div class="image-skills">
                             <img src="./resources/index/twine.png" alt="twine">
                         </div>
-                    </div>
-                <div class="container">
-                    <div class="interests">
+                </section>
+                <section class="interests">
+                    <div class="container">
                         <h3>Interests</h3>
                         <h4>Games</h4>
                         <ul>
@@ -85,15 +94,17 @@
                             <li>Watcher</li>
                         </ul>
                     </div>
-                </div>
-            </div>
-        </section>
-        <section class="updates">
-            <p>Last update: <span id="lastupdate"></span></p><br>
-        </section>
+                </section>
+                <section class="updates">
+                    <h3>Updates</h3>
+                    <div class="container">
+                        <p>Last update: <span id="lastupdate"></span></p><br>
+                        <p><span>07/02/23:</span> made index a grid layout. put breadcrumb for projects and writing. added ko-fi link.
+                        </p>
+                    </div>
+                </section>
     </main>
     <footer>
-        <p>You are Visitor: <span id="hitcount"></span> .</p>
         <img src="./resources/bestvwmonitor.gif" alt="best viewed with computer">
         <a href="https://neocities.org" target="_blank"><img src="./resources/neocities.gif" alt="neocities"></a>
     </footer>

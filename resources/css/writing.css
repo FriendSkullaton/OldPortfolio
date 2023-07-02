@@ -43,3 +43,19 @@
 #writing img {
     max-width: 400px;
 }
+
+#writing ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+#writing ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.divider {
+    padding: 20px;
+}

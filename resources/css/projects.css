@@ -1,6 +1,7 @@
 .examples {
     max-height: 500px;
     max-width: 500px;
+    padding-top: 10px;
 }
 
 .examples img {
@@ -26,6 +27,12 @@
 
 #projects h2 {
     text-decoration: underline;
+    padding-top: 50px;
+}
+
+#projects ul {
+    display: flex;
+    flex-direction: row;
 }
 
 #projects ul li {
@@ -48,4 +55,14 @@
 
 #projects li a:active {
     background-color:#776651;
+}
+
+.divider {
+    height: 100%;
+    width: auto;
+    padding: 10px;
+}
+
+.divider img {
+    max-width: 600px;
 }
