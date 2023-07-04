@@ -3,11 +3,13 @@
 #quizzes img {
     max-height: 300px;
     max-width: 300px;
-    padding: 2px;
+    padding: 3px;
 }
 
 .results {
+    padding: 10px;
     display: flex;
+    flex-direction: column;
     flex-wrap:wrap;
     justify-content:center;
     align-items:center;

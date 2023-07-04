@@ -106,7 +106,7 @@ nav li a:active {
 
 /* Main section */
 
-#about, #contact, #projects, #graphics, #shrines, #quizzes, #writing {
+#about, #contact, #projects, #graphics, #shrines, #quizzes, #writing, #links {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
