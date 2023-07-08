@@ -1,0 +1,92 @@
+html {
+    font-family: 'Corben', cursive;
+}
+
+body{
+    background-image: url('https://skellonlinecollection.carrd.co/assets/images/image17.jpg'), url('https://skellonlinecollection.carrd.co/assets/images/image17.jpg');
+    background-color: #fff3d4;
+    background-repeat: no-repeat;
+    background-position: left, right;
+    background-attachment: fixed;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-image: url('https://skellonlinecollection.carrd.co/assets/images/image18.png') 40 fill / 20px / 10px space;
+    max-width: 800px;
+    margin: auto;
+    padding: 15px;
+    background-color: #fbf6ea;
+}
+
+.description {
+    padding: 20px;
+}
+
+.wally {
+    z-index: 1;
+    max-height: 500px;
+    max-width: 500px;
+    left: 50px;
+    position: absolute;
+}
+
+.wally img {
+    height: auto;
+    width: 100%;
+}
+
+.name {
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.name img {
+    width: 100%;
+    height: auto;
+}
+
+.divider {
+    max-width: 400px;
+    max-height: 100px;
+    padding-bottom: 15px;
+}
+
+.divider img {
+    width: 100%;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    max-height: 200px;
+}
+
+.tabcontent {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    max-width: 800px;
+    flex-direction: column;
+    border-image: url('https://skellonlinecollection.carrd.co/assets/images/image18.png') 40 fill / 20px / 10px space;
+    background-color: #fbf6ea;
+    padding: 15px;
+}
+
+nav button {
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+
+
+nav button:hover {
+    background-color: red;
+}

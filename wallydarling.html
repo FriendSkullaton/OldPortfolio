@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./resources/css/reset.css" rel="stylesheet">
+    <link href="./resources/css/wallydarling.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Corben:wght@400;700&display=swap" rel="stylesheet">
+    <title>Wally Darling</title>
+</head>
+<body>
+    <main>
+        <div class="wally"><img src="./resources/shrines/Wally_edited.png"></div>
+        <section class="about">
+            <img src="./resources/shrines/wallyname.gif" class="name">
+            <img src="./resources/shrines/Colorbar.gif" class="divider">
+            <div class="description">
+                <p>"Wally Darling is the friendliest neighbor in Welcome Home, perhaps even the best painter too. With a smile like his it's hard to disagree! Always eager to make new friends and show them around the neighborhood, Wally is happy to lend a helping hand. But you knew that already, didn't you?"</p>
+            </div>
+        </section>
+        <nav>
+            <button class="tablinks" onclick="openCity(event, 'one')" id="defaultOpen">Credits</button>
+            <button class="tablinks" onclick="openCity(event, 'two')" id="defaultOpen">Gallery</button>
+            <button class="tablinks" onclick="openCity(event, 'three')" id="defaultOpen">Fics</button>
+            <button class="tablinks" onclick="openCity(event, 'four')" id="defaultOpen">Projects</button>
+        </nav>
+        <section id="one" class="tabcontent" style="display: none;">
+            <p>I'm a test</p>
+        </section>
+        <section id="two" class="tabcontent" style="display: none;">
+            <p> TEST TWO WOW</p>
+        </section>
+        <section id="three" class="tabcontent" style="display: none;">
+            <p>THIRD TEST</p>
+        </section>
+        <section id="four" class="tabcontent" style="display: none;">
+            <p>FOURTH</p>
+        </section>
+
+
+
+
+    </main>
+    <script>
+        function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+    </script>
+</body>
+</html>
