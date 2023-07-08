@@ -1,5 +1,20 @@
 html {
     font-family: 'Corben', cursive;
+    font-size: 17px;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+p {
+    padding: 10px;
 }
 
 body{
@@ -8,8 +23,18 @@ body{
     background-repeat: no-repeat;
     background-position: left, right;
     background-attachment: fixed;
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
+main {
+    position: relative;
+    top: 50px;
+}
+
+
+/* Top Section */
 .about {
     display: flex;
     align-items: center;
@@ -24,19 +49,8 @@ body{
 
 .description {
     padding: 20px;
-}
-
-.wally {
-    z-index: 1;
-    max-height: 500px;
-    max-width: 500px;
-    left: 50px;
-    position: absolute;
-}
-
-.wally img {
-    height: auto;
-    width: 100%;
+    max-width: 700px;
+    line-height: 150%;
 }
 
 .name {
@@ -60,13 +74,52 @@ body{
     height: auto;
 }
 
+/* Wally :) */
+
+.wally {
+    z-index: 1;
+    max-height: 500px;
+    max-width: 500px;
+    left: 50px;
+    position: absolute;
+}
+
+.wally img {
+    height: auto;
+    width: 100%;
+}
+
+.wiggle:hover {
+    animation: wiggle 1s infinite;
+}
+
+/* Nav */
+
 nav {
     display: flex;
     justify-content: center;
     padding: 20px;
     max-height: 200px;
+    max-width: 800px;
+    margin: auto;
 }
 
+nav button {
+    border: none;
+    outline: none;
+    padding-left: 80px;
+    padding-right: 80px;
+    font-family: 'Corben', cursive;
+    background-color: #fbf6ea;
+    transition: 0.3s;
+}
+
+nav button:hover {
+    background-color:#d33c2f;
+}
+
+
+/* Nav content */
 .tabcontent {
     margin: auto;
     display: flex;
@@ -80,13 +133,52 @@ nav {
     padding: 15px;
 }
 
-nav button {
-    border: none;
-    outline: none;
-    padding: 10px;
+.tabcontent a {
+    color:#d33c2f;
+    transition: 0.3s;
+    text-decoration: underline;
 }
 
+.tabcontent a:hover {
+    color: #A12E23;
+}
 
-nav button:hover {
-    background-color: red;
+.tabcontent a:active {
+    color: #542F2C;
+}
+
+/* Back button */
+
+.goodbye {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 200px;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background-image:url(../shrines/Swipe!.png) no-repeat;
+}
+
+.topgif {
+    max-height: 200px;
+    max-width: 300px;
+}
+
+/* Keyframes */
+@keyframes wiggle {
+    0% { transform: rotate(5deg); }
+   25% { transform: rotate(-5deg); }
+   50% { transform: rotate(5deg); }
+   75% { transform: rotate(-5deg); }
+  100% { transform: rotate(5deg); }
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
 }
