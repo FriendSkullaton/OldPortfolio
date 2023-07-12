@@ -6,6 +6,7 @@
     <link href="./resources/css/reset.css" rel="stylesheet">
     <link href="./resources/css/wallydarling.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Corben:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./resources/shrines/wallyicon.jpg">
     <title>Wally Darling</title>
 </head>
 <body>
@@ -29,7 +30,7 @@
             <h2>Credits</h2>
             <p>All assets belong to <a href="">Clown Illustration</a></p>
             <p>This is a fansite, and I, Skullaton, declare none of this my own.</p>
-            <p>This is only meant to be a fun shrine for my favourite character from Welcome Home, and I do not own Wally.</p>
+            <p>This is only meant to be a fun shrine for my favourite character from Welcome Home, and I do not own Wally or Welcome Home.</p>
         </section>
         <section id="two" class="tabcontent" style="display: none;">
             <h2>Gallery</h2>
@@ -62,13 +63,19 @@
         </section>
 
         <section class="goodbye">
-            <a href=""><img class="topgif" src="./resources/shrines/goodbye.gif"></a>
+            <div class="swipe">
+                <img src="./resources/shrines/Swipe!.png">
+            </div>
+            <div class="topgif">
+                <a href=""><img src="./resources/shrines/goodbye.gif"></a>
+            </div>
         </section>
 
 
 
     </main>
     <script>
+        // nav container
         function openCity(evt, cityName) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
@@ -85,6 +92,40 @@
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
+
+// Gallery
+let imageBox1 = document.getElementById("imageBox1");
+
+function galleryFunction1(smallImg) {
+  imageBox1.src = smallImg.src;
+}
+
+// Get the modal image tag
+var modal = document.getElementById("myModal");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+var modalImage = document.getElementById("modal-image");
+
+// When the user clicks the big picture, set the image and open the modal
+imageBox1.onclick = function (e) {
+  var src = e.srcElement.src;
+  modal.style.display = "block";
+  modalImage.src = src;
+};
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function () {
+  modal.style.display = "none";
+};
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};
     </script>
 </body>
 </html>

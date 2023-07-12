@@ -1,3 +1,8 @@
+* {
+    cursor: url(https://cur.cursors-4u.net/food/foo-5/foo428.cur), auto !important;
+}
+
+
 html {
     font-family: 'Corben', cursive;
     font-size: 17px;
@@ -164,16 +169,24 @@ nav button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-height: 200px;
-    max-width: 400px;
+    max-height: 300px;
+    max-width: 300px;
     margin: auto;
     padding: 20px;
-    background-image:url(../shrines/Swipe!.png) no-repeat;
+    position: relative;
+}
+
+.swipe {
+    position: relative;
 }
 
 .topgif {
-    max-height: 200px;
-    max-width: 300px;
+    position: absolute;
+}
+
+.topgif img {
+    max-height: 130px;
+    max-width: 130px;
 }
 
 /* Keyframes */
