@@ -12,10 +12,13 @@ h2 {
     font-size: 30px;
     font-weight: bold;
     padding-bottom: 20px;
+    text-align: center;
 }
 
 h3 {
     font-size: 25px;
+    padding: 15px;
+    text-decoration: underline;
 }
 
 p {
@@ -56,6 +59,11 @@ main {
     padding: 20px;
     max-width: 700px;
     line-height: 150%;
+}
+
+.description span{
+    right: .5%;
+    position: relative;
 }
 
 .name {
@@ -130,7 +138,6 @@ nav button:hover {
     display: flex;
     justify-content: center;
     align-items:center;
-    text-align: center;
     max-width: 800px;
     flex-direction: column;
     border-image: url('https://skellonlinecollection.carrd.co/assets/images/image18.png') 40 fill / 20px / 10px space;
@@ -138,29 +145,128 @@ nav button:hover {
     padding: 15px;
 }
 
-.tabcontent a {
+#one span {
+    text-decoration:line-through;
+}
+
+#two span {
+    left: .5%;
+    position: relative;
+}
+
+#three span{
+    text-decoration:overline;
+}
+
+#four span {
+    right: .5%;
+    position: relative;
+}
+
+.tabcontent a, .description a {
     color:#d33c2f;
     transition: 0.3s;
     text-decoration: underline;
 }
 
-.tabcontent a:hover {
+.tabcontent a:hover, .description a:hover  {
     color: #A12E23;
 }
 
-.tabcontent a:active {
+.tabcontent a:active, .description a:active {
     color: #542F2C;
 }
 
-.gallery {
-    max-width: 750px;
-    max-height: 750px;
+.summary {
+    overflow: auto;
+    border: 2px solid;
+    height: 150px;
+    width: 50%;
+    padding: 10px;
+    background-color: #Fff;
+    text-align: center;
+    position: relative;
 }
 
-.gallery img {
-    width: 100%;
-    height: auto;
+#four img {
+    max-height: 600px;
+    max-width: 600px;
+    padding: 10px;
 }
+
+
+/* Modal */
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 50px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .modal-content {
+    margin: auto;
+    text-align: center;
+  }
+  
+  .modal-image {
+    display: inline-block;
+  }
+  
+  .close {
+    color: #FFF;
+    display: block;
+    font-size: 60px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .gallery {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      margin: 100px 10px;
+  }
+  
+      .boxOfimages .big-img input {
+                  display: block;
+                  margin: 0 auto;
+                  width: 290px;
+                  margin-bottom: 10px;
+              }
+          
+          
+          .boxOfsmallImgs {
+              display: flex;
+              justify-content: space-between;
+              flex-wrap: wrap;
+  }
+  
+              .boxOfsmallImgs img {
+                  max-width: 100px;
+                  max-height: 100px;
+                  opacity: 0.7;
+                  transition: opacity 0.4s ease;
+                  margin: 2px;
+              }
+          
+  
+          .boxOfsmallImgs img:hover {
+              opacity: 1;
+          }
 
 
 /* Back button */

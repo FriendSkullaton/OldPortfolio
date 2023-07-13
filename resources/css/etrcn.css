@@ -1,0 +1,11 @@
+body {
+    background-image:url('https://i.pinimg.com/originals/1e/b4/0e/1eb40e8f6c568d75f45bcb41ad97bdf9.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.home {
+    position: absolute;
+    left: 50%;
+    top: 55%;
+}
