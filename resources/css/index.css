@@ -94,3 +94,7 @@
     grid-area: updates;
     overflow: auto;
 }
+
+.updates p, .updates span {
+    font-size: 13px;
+}
