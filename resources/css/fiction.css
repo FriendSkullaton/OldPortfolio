@@ -1,0 +1,115 @@
+body {
+    background-image: url('../other/purple-skellycat.png');
+}
+
+.centre {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #FFF;
+    max-width: 810px;
+    height: 900px;
+    margin: auto;
+    
+}
+
+.topimage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topimage img {
+    border: 5px white solid;
+}
+
+.buttons ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    max-width: 810px;
+    margin: auto;
+    background-color: #000;
+}
+
+.buttons li {
+    background-color: #000;
+    padding: 15px;
+}
+
+.buttons li a {
+    color: #fff;
+    transition: 0.3s;
+    padding: 15px;
+}
+
+.buttons li a:hover {
+    background-color: #e2c7f6;
+}
+
+.buttons li a:active {
+    background-color: #b8a9de;
+}
+
+
+/* sidebar */
+.sidenav-style {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.sidenav-style p {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: darkgoldenrod;
+    display: block;
+}
+  
+.sidenav-style a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: darkgoldenrod;
+    display: block;
+    transition: 0.3s;
+}
+  
+.sidenav-style a:hover {
+    color: #f1f1f1;
+}
+  
+.sidenav-style .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.sidenav-style button {
+    background-color: #C9CAA3;
+    color: black;
+    box-shadow: none;
+    border-radius: 0px;
+    border: 0;
+    margin: 8px;
+    padding: 10px;
+    font-size: 30px;
+    transition: 0.3s;
+}
+
+.sidenav-style button:hover {
+    background-color: #97987A;
+}
+
+.sidenav-style button:active {
+    background-color: #656552;
+}
