@@ -6,7 +6,7 @@
     <link href="./resources/css/reset.css" rel="stylesheet">
     <link href="./resources/css/fiction.css" rel="stylesheet">
     <!-- <link rel="icon" type="image/x-icon" href="./resources/favicon.ico"> -->
-    <title>Document</title>
+    <title>Skeletal Writing</title>
 </head>
 <body>
     <header>
@@ -19,16 +19,14 @@
         </nav>
         <div class="topimage"><img src="./resources/other/placeholder.png"></div>
         <div class="buttons">
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Original Fiction</a></li>
-                <li><a href="">Fanfictions</a></li>
-                <li><a href="">Main Page</a></li>
-            </ul>
+            <button class="tablinks wiggle" onclick="openCity(event, 'one')" id="defaultOpen">Home</button>
+            <button class="tablinks wiggle" onclick="openCity(event, 'two')" id="defaultOpen">Original Fiction</button>
+            <button class="tablinks wiggle" onclick="openCity(event, 'three')" id="defaultOpen">Fanfiction</button>
+            <button class="tablinks wiggle" onclick="openCity(event, 'four')" id="defaultOpen">Main Page</button>
         </div>
     </header>
     <main>
-        <div class="centre">
+        <div id="one" class="tabcontent" style="display: none;">
             <section class="start">
                 <h2>Welcome</h2>
                 <p>You've landed yourself in quite a situation!</p>
@@ -38,11 +36,28 @@
             <section class="about">
                 <h2>About</h2>
                 <p>I'm Skell! I write on my free time. My main genre is horror and romance, with some poetry drizzled to the side.</p>
+                <p>I'm a 30 year old skeleton living in Australia.</p>
             </section>
             <section class="updates">
                 <h2>Updates</h2>
+                <p>07/19/2023: First made the site! Huzzah!</p>
             </section>
         </div>
+
+        <div  id="two" class="tabcontent" style="display: none;">
+            <h2>Novels</h2>
+            <p></p>
+            <p>Test</p>
+        </div>
+
+        <div id="three" class="tabcontent" style="display: none;">
+            <p>test 2</p>
+        </div>
+
+        <div id="four" class="tabcontent" style="display: none;">
+        <p>Test4
+
+        </p></div>
 
     </main>
     <footer>
@@ -50,6 +65,26 @@
     </footer>
 
     <script>
+
+
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+// nav
     function openNav() {
     document.getElementById("sideNav").style.width = "400px";
     }
