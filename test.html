@@ -1,0 +1,126 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./resources/css/reset.css" rel="stylesheet">
+    <link href="./resources/css/styles.css" rel="stylesheet">
+    <link href="test.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/resources/skullfav.gif">
+    <title>Skell's Website</title>
+</head>
+<body>
+    <header>
+        <h1>Skell</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">about</a></li>
+                <li><a href="projects.html">projects</a></li>
+                <li><a href="writing.html">writing</a></li>
+                <li><a href="graphics.html">graphics</a></li>
+                <li><a href="shrines.html">shrines</a></li>
+                <li><a href="quizzes.html">quizzes</a></li>
+                <li><a href="contact.html">contact</a></li>
+                <li><a href="links.html">links</a></li>
+                <li><a href="http://skull-aton.123Guestbook.com/" target="_blank">guestbook</a></li>
+                <li><a href="https://ko-fi.com/skullaton" target="_blank">ko-fi</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+                
+                <section class="interests">
+                    <div class="container">
+                        <h3>Interests</h3>
+                        <h4>Games</h4>
+                        <ul>
+                            <li>Persona 3 and 5</li>
+                            <li>Stray</li>
+                            <li>Final Fantasy 7, 10, 15</li>
+                            <li>Spyro</li>
+                            <li>...and way too many indie games</li>
+                        </ul>
+                        <h4>Shows</h4>
+                        <ul>
+                            <li>Gravity Falls</li>
+                            <li>The Owl House</li>
+                            <li>Infinity Train</li>
+                            <li>Amphibia</li>
+                        </ul>
+                        <h4>Other</h4>
+                        <ul>
+                            <li>Welcome Home</li>
+                            <li>Watcher</li>
+                        </ul>
+                    </div>
+                </section>
+                
+                <section class="updates">
+                    <div class="container">
+                        <p>Last update: <span id="lastupdate"></span></p><br><br>
+                        <p><span>07/14/23:</span> Added Webrings and fixed up shrine page</p>
+                        <p><span>07/14/23:</span> Added A Wally Shrine! There's even a fun hidden page!</p>
+                        <p><span>07/07/23:</span> fixed issue in index.</p>
+                        <p><span>07/05/23:</span> created a links page, fixed favicon issue for a few pages</p>
+                        <p><span>07/02/23:</span> updated index page. put breadcrumb for projects and writing. added ko-fi link.
+                        </p>
+                    </div>
+                </section>
+    
+    
+    
+        <section id="about">
+            <div class="container">
+                <div class="overlay">
+                    <div class="skell">
+                    <img src="./resources/index/skell-icon.png" alt="picture of skell"><br>
+                    </div>
+                </div>
+                <h2><img src="./resources/other/skull1.gif"> About <img src="./resources/other/skull1.gif"></h2><br>
+                <p>Hi, I'm <span>Skell</span>! (<span>They/Them</span>)<br>
+                <p>My current mood:</p><a href="https://www.imood.com/users/skull_aton"><img src="https://moods.imood.com/display/uname-skull_aton/fg-ffdd68/bg-969387/imood.gif" alt="The current mood of skull_aton at www.imood.com" border="0"></a>
+                <br><br><p>I'm a budding web developer that generally focuses on y2k web aesthetics and recreation.</p><br>
+                <p>In my free time I play video games and write.</p><br>
+                <p>Make sure to say hi or follow on my <a href="https://neocities.org/site/skull-aton" style="color:#ffdd68">neocities profile</a>!</p><br>
+                
+                    <p>You are Visitor: <span id="hitcount"></span> .</p><br>
+                    <object id="melonland-surf-club" data="https://melonland.net/surf-badge.svg?fill=#ffdd68" type="image/svg+xml" style="width: 100px; height: 100px;"></object>
+                </div>
+                <div class="divider">
+                    <img src="./resources/index/skull-divider.png" alt="Skull Divider">
+                </div>
+                <div class="divider">
+                    <img src="./resources/other/construction 2.gif"><br>
+                    <p>This website is mostly under construction. mind the mess c:</p><br>
+                </div>
+        </section>
+              
+    </main>
+    <footer>
+    <iframe id="bucket-webring" style="width: 100%; height: 3rem; border: none;" src="https://webring.bucketfish.me/embed.html?name=Skell"></iframe>
+        <img src="/resources/bestvwmonitor.gif" alt="best viewed with computer">
+        <a href="https://neocities.org" target="_blank"><img src="/resources/neocities.gif" alt="neocities"></a>
+    </footer>
+    <script>
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                var site_data = JSON.parse(this.responseText);
+                var num_arr = site_data.info.views.toString().split("");
+                var num_str = "";
+                for (i = 0; i < num_arr.length; i++) {
+                    num_str += num_arr[i];
+                    if ( (num_arr.length-1 - i) % 3 == 0 && (num_arr.length-1 - i) != 0 ) {num_str += ",";}
+                    var date_str = site_data.info.last_updated;
+                    var date_obj = new Date(site_data.info.last_updated);
+                    document.getElementById("lastupdate").innerHTML = (date_obj.getMonth()+1) + "-" + date_obj.getDate() + "-" + date_obj.getFullYear();
+                }
+                document.getElementById("hitcount").innerHTML = num_str;
+            }
+        };
+        xhttp.open("GET", "https://weirdscifi.ratiosemper.com/neocities.php?sitename=skull-aton", true);
+        xhttp.send();
+    </script>
+</body>
+</html>

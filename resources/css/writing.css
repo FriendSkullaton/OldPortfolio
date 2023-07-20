@@ -41,8 +41,17 @@
     background-color:#776651;
 }
 
-#writing img {
+.description {
     max-width: 400px;
+}
+
+.description img  {
+    width: 100%;
+    height: auto;
+}
+
+.icons {
+    max-width: 20px;
 }
 
 #writing ul li {
@@ -55,8 +64,25 @@
 #writing ul {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .divider {
     padding: 20px;
+    max-width: 400px;
+}
+
+.divider img {
+    width: 100%;
+    height: auto;
+
+}
+
+@media only screen and (max-width: 450px){
+    .divider {
+        max-width: 400px;
+    }
+    .description {
+        max-width: 400px;
+    }
 }

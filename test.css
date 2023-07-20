@@ -1,0 +1,93 @@
+.skell {
+    max-height: 300px;
+    max-width: 300px;
+    opacity: .50;
+    transition: 0.3s;
+}
+
+.skell img {
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+}
+
+.skell:hover {
+    opacity: 1;
+}
+
+
+
+.skills img {
+    max-height: 40px;
+    max-width: 40px;
+}
+
+.overlay {
+    background: linear-gradient(to right, rgba(187, 171, 25, 0.7), rgb(239, 203, 162));
+    border-radius: 50%;
+}
+
+
+.interests h4{
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+
+.interests {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #969387;
+    border: solid 8px #ffdd68;
+    max-width: 300px;
+    flex-wrap: wrap;
+    float: right;
+    padding: 5px;
+}
+
+.interests li {
+    padding: 2px;
+    font-weight: bold;
+}
+
+#about a:hover{
+  color: darkgoldenrod;
+  }
+
+.updates {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #969387;
+    border: solid 8px #ffdd68;
+    max-width: 200px;
+    max-height: 200px;
+    padding: 10px;
+    flex-wrap: wrap;
+    overflow: auto;
+    float: left;
+}
+
+.updates p, .updates span {
+    font-size: 13px;
+}
+
+.divider {
+    max-width: 500px;
+}
+
+.divider img {
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 800px){
+    .interests {
+        display: none;
+    }
+    .updates {
+        display: none;
+    }
+}

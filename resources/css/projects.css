@@ -33,6 +33,7 @@
 #projects ul {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 #projects ul li {
@@ -58,11 +59,11 @@
 }
 
 .divider {
-    height: 100%;
-    width: auto;
+    max-width: 600px;
     padding: 10px;
 }
 
 .divider img {
-    max-width: 600px;
+    width: 100%;
+    height: auto;
 }
