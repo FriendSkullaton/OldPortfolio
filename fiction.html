@@ -10,24 +10,19 @@
 </head>
 <body>
     <header>
-        <nav>
-            <span onclick="openNav()">&#9776; Navigation</span>
-            <div id="sideNav" class="sidenav-style">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            </div>
-
-        </nav>
         <div class="topimage"><img src="./resources/other/placeholder.png"></div>
-        <div class="buttons">
-            <button class="tablinks wiggle" onclick="openCity(event, 'one')" id="defaultOpen">Home</button>
-            <button class="tablinks wiggle" onclick="openCity(event, 'two')" id="defaultOpen">Original Fiction</button>
-            <button class="tablinks wiggle" onclick="openCity(event, 'three')" id="defaultOpen">Fanfiction</button>
-            <button class="tablinks wiggle" onclick="openCity(event, 'four')" id="defaultOpen">Main Page</button>
-        </div>
+        <nav class="buttons">
+            <button class="tablinks" onclick="openCity(event, 'one')" id="defaultOpen">Home</button>
+            <button class="tablinks" onclick="openCity(event, 'two')" id="defaultOpen">Original Fiction</button>
+            <button class="tablinks" onclick="openCity(event, 'three')" id="defaultOpen">Fanfiction</button>
+            <button class="tablinks" onclick="openCity(event, 'four')" id="defaultOpen">Main Page</button>
+            <button class="tablinks" onclick="darkMode()">Dark Mode/Light Mode</button>
+        </nav>
     </header>
     <main>
+        <div id="center">
         <div id="one" class="tabcontent" style="display: none;">
-            <section class="start">
+            <section class="welcome">
                 <h2>Welcome</h2>
                 <p>You've landed yourself in quite a situation!</p>
                 <p>You see, this here is a tomb filled with obituaries!</p>
@@ -44,21 +39,41 @@
             </section>
         </div>
 
-        <div  id="two" class="tabcontent" style="display: none;">
+        <div id="two" class="tabcontent" style="display: none;">
+            <h2>Poetry</h2>
+            <p><a href="./writing/poetry.html#family">Family</a></p>
+            <p><a href="./writing/poetry.html#home">a question</a></p>
             <h2>Novels</h2>
-            <p></p>
-            <p>Test</p>
+            <p>Little Lambs (WIP)</p>
+            <p>Through Our Friends (WIP)</p>
         </div>
 
         <div id="three" class="tabcontent" style="display: none;">
-            <p>test 2</p>
+            <h2>Welcome Home</h2>
+            <p><a href="">Escapism</a></p>
+            <p>About:</p>
+            <div class="summary">
+                <p>The city is full of people. Then why did it feel so lonely?<br>
+                    Memories of clinking bottles and dazzling neon lights flickered through your mind.<br>
+                    Misty, car filled streets with humans, but no humanity.<br>
+                    A bridge and a phonebooth.<br>
+                    And a sweet voice that wanted you to come home.<br><br>
+                    You've wandered too far, and you don't know how to get back. But don't worry! You've made some friends from a colourful town that can help you!</p>
+            </div>
+            <p><a href="">cold hands, warm hearts</a></p>
+            <p><a href="">Heart of Glass</a></p>
+            <p><a href="">Apple Spice Pancakes</a></p>
+
+            <h2>Detroit Become Human</h2>
+            <p><a href="How to be Human">How to be Human</a></p>
+            
+            <h2>Gravity Falls</h2>
+            <p><a href="Dimension 69">Dimension 69</a></p>
         </div>
 
         <div id="four" class="tabcontent" style="display: none;">
-        <p>Test4
-
-        </p></div>
-
+        </div>
+        </div>
     </main>
     <footer>
 
@@ -80,17 +95,14 @@ function openCity(evt, cityName) {
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.className += " active";
 }
-
-// Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 
-// nav
-    function openNav() {
-    document.getElementById("sideNav").style.width = "400px";
-    }
-
-    function closeNav() {
-    document.getElementById("sideNav").style.width = "0";
+    // Dark mode
+    function darkMode() {
+   var background = document.body;
+   background.classList.toggle("dark-mode");
+   let center = document.getElementById('center')
+   center.classList.toggle('dark');
     }
     </script>
 

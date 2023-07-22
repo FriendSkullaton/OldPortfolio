@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../resources/css/fiction.css" rel="stylesheet">
+    <link href="../resources/css/textwriting.css" rel="stylesheet">
+    <title>Poetry</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <span onclick="openNav()">&#9776; Table Of Contents</span>
+            <div id="sideNav" class="sidenav-style">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <p>Click Below</p>
+                <a href="#family">Family</a>
+                <a href="#home">a question</a>
+            </div>
+        </nav>
+        <div class="topimage"><img src="../resources/other/placeholder.png"></div>
+        <div class="buttons">
+            <button class="tablinks" onclick="window.location.href='../fiction.html'">Home</button>
+            <!-- <button class="tablinks" onclick="window.location.href='../fiction.html#two'">Original Fiction</button>
+            <button class="tablinks" onclick="openCity(event, 'three')" id="defaultOpen">Fanfiction</button> -->
+            <button class="tablinks" onclick="">Main Page</button>
+            <button class="tablinks" onclick="darkMode()">Dark Mode/Light Mode</button>
+        </div>
+    </header>
+    <main>
+        <div id="center">
+            <section id="family">
+               <h2>Family</h3>
+                <p>i try to breath<br>
+                only to be shoved under<br>
+                the waves of love<br>
+                in an endless sea<br>
+                of entitlement.</p>
+
+                <p>i try to love<br>
+                only to be smothered<br>
+                by the hands of<br>
+                familiar people.</p>
+
+                <p>i try to live<br>
+                but find only broken toys<br>
+                of playtimes past.</p>
+
+                <p>i try to exist<br>
+                but i cannot</p>
+
+                <p>if you’re around.</p>
+            </section>
+            <section id="home">
+               <h2>a question</h2>
+               <p>what’s in a home?</p>
+                
+               <p>is it the four walls that keep us safe?<br>
+                the roof that protects us?<br>
+                the food in our fridge?</p>
+
+                <p>or is it the memories of bygones past?<br>
+                the feeling of leaves crunching beneath feet?<br>
+                the nip of winter as holiday lights twinkle across the neighbourhood?<br>
+                the humid july air, thick with excitement and fireworks?<br>
+                the dancing of fireflies at night?<br>
+                the cool pine breeze?<br>
+                love long lost?</p>
+                
+                <p>maybe a home is figurative<br>
+                
+                memories and sadness and happiness and belonging<br>
+                
+                maybe it is constantly evolving and devolving and existing<br>
+                
+                maybe home is</p>
+                
+                <p>you</p>
+            </section>
+
+        </div>
+
+    </main>
+
+    <script>
+        
+        // nav
+            function openNav() {
+            document.getElementById("sideNav").style.width = "400px";
+            }
+        
+            function closeNav() {
+            document.getElementById("sideNav").style.width = "0";
+            }
+
+            // Dark mode
+            function darkMode() {
+   var background = document.body;
+   background.classList.toggle("dark-mode");
+   let center = document.getElementById('center')
+   center.classList.toggle('dark');
+    }
+            </script>
+</body>
+</html>

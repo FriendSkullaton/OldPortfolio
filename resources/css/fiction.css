@@ -2,38 +2,76 @@ h2 {
     text-align: center;
     font-size: 32px;
     padding: 15px;
+    text-decoration: underline;
 }
+
 p {
-    padding: 10px;
+    padding: 5px;
 }
+
 
 body {
     background-image: url('../other/purple-skellycat.png');
 }
 
-.tabcontent {
+.dark-mode {
+    background-image: url('../other/ghosts.png');
+}
+
+#center {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     background-color: #FFF;
-    max-width: 810px;
-    height: 900px;
+    color: black;
+    max-width: 760px;
     margin: auto;
-    
+    padding: 25px;
+}
+
+#center.dark {
+    background-color: black;
+    color: white;
+}
+
+#center a {
+    color:#82789d;
+    text-decoration: underline;
+}
+
+#center a:hover {
+    color: #b8a9de
 }
 
 .topimage {
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 800px;
+    margin: auto;
 }
 
 .topimage img {
     border: 5px white solid;
+    width: 100%;
+    height: auto;
+}
+
+.summary {
+    height: 150px;
+    width: 50%;
+    padding: 10px;
+    border: 2px solid black;
+    /* font-size:125%; */
+    color: #82789d;
+    overflow: auto;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-align: center;
 }
 
 .buttons {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items:center;
     max-width: 810px;
@@ -60,6 +98,17 @@ body {
 
 
 /* sidebar */
+
+header span {
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    font-size: 35px;
+    position:fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
 .sidenav-style {
     height: 100%;
     width: 0;
@@ -71,12 +120,12 @@ body {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
+    color: white;
 }
 .sidenav-style p {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: darkgoldenrod;
     display: block;
 }
   
@@ -84,13 +133,13 @@ body {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: darkgoldenrod;
+    color: white;
     display: block;
     transition: 0.3s;
 }
   
 .sidenav-style a:hover {
-    color: #f1f1f1;
+    color: #e2c7f6;
 }
   
 .sidenav-style .closebtn {
@@ -101,22 +150,9 @@ body {
     margin-left: 50px;
 }
 
-.sidenav-style button {
-    background-color: #C9CAA3;
-    color: black;
-    box-shadow: none;
-    border-radius: 0px;
-    border: 0;
-    margin: 8px;
-    padding: 10px;
-    font-size: 30px;
-    transition: 0.3s;
-}
 
-.sidenav-style button:hover {
-    background-color: #97987A;
-}
-
-.sidenav-style button:active {
-    background-color: #656552;
-}
+@media screen and (max-width: 450px) {
+    .sidenav-style {padding-top: 15px;}
+    .sidenav-style a {font-size: 18px;}
+    header span {font-size:20px;}
+  }
