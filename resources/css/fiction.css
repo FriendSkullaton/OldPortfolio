@@ -5,6 +5,10 @@ h2 {
     text-decoration: underline;
 }
 
+h3 {
+    font-size: 25px;
+}
+
 p {
     padding: 5px;
 }
@@ -42,7 +46,7 @@ body {
     color: #b8a9de
 }
 
-.topimage {
+#topimage {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -50,7 +54,7 @@ body {
     margin: auto;
 }
 
-.topimage img {
+#topimage img {
     border: 5px white solid;
     width: 100%;
     height: auto;
@@ -58,15 +62,27 @@ body {
 
 .summary {
     height: 150px;
-    width: 50%;
+    width: 60%;
     padding: 10px;
     border: 2px solid black;
-    /* font-size:125%; */
     color: #82789d;
     overflow: auto;
     font-family:'Courier New', Courier, monospace;
+    Font-size: 17px;
     font-weight: bold;
     text-align: center;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+.entry {
+    padding: 40px;
 }
 
 .buttons {
@@ -155,4 +171,5 @@ header span {
     .sidenav-style {padding-top: 15px;}
     .sidenav-style a {font-size: 18px;}
     header span {font-size:20px;}
+    .top {display: none;}
   }

@@ -111,6 +111,7 @@ main {
 nav {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     padding: 20px;
     max-height: 200px;
     max-width: 800px;
@@ -188,9 +189,12 @@ nav button:hover {
     position: relative;
 }
 
+#four {
+    max-width: 500px;
+}
+
 #four img {
-    max-height: 600px;
-    max-width: 600px;
+    max-width: 100%;
     padding: 10px;
 }
 
@@ -311,4 +315,35 @@ nav button:hover {
     100% {
         opacity: 1;
      }
+}
+
+/* media queries */
+@media only screen and (max-width: 1500px) {
+    .wally {
+        max-width: 400px;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .wally {
+        max-width: 300px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .wally {
+        max-width: 200px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .wally {
+        max-width: 150px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .wally {
+        display: none;
+    }
 }

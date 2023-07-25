@@ -1,3 +1,227 @@
+html {
+    font-family: 'Century Gothic', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+* {
+    cursor: url(https://cur.cursors-4u.net/holidays/hol-1/hol35.cur), auto !important;
+}
+
+h1 {
+    font-size: 70px;
+    color: #ffdd68;
+    font-family: 'Homemade Apple', cursive;
+}
+
+h2{
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 25px;
+}
+
+h2, h3, h4 {
+    color: #efcba2;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+p {
+    font-size: 18px;
+}
+
+
+body {
+    background-image:url(./resources/background-cute.gif);
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background:#ffdd68;
+}
+
+::-webkit-scrollbar-thumb {
+    background:#efcba2;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #B3987A;
+}
+
+::-webkit-scrollbar-button {
+    background:#969387;
+}
+
+/* Header Section */
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    background-color: #969387;
+    margin-top: 20px;
+    border-bottom: solid 8px #ffdd68;
+}
+
+
+nav button {
+    background-color: #efcba2;
+    padding: 10px;
+    transition: 0.3s;
+    border-radius: 30%;
+    border: none;
+    outline: none;
+}
+
+nav button:hover {
+    background-color:#B3987A;
+}
+
+nav button:active {
+    background-color:#776651;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    justify-content: space-around;
+    list-style: square inside url('./resources/e9ba748b.gif');
+}
+
+nav li {
+    padding: 15px;
+}
+
+/* Main section */
+
+.tabcontent {
+    margin: auto;
+    max-width: 700px;
+    border: solid 8px #ffdd68;
+    background-color: #969387;
+    padding: 10px;
+    max-width: 700px;
+    margin: auto;
+    min-height: 800px;
+}
+
+
+
+
+#about, #contact, #projects, #graphics, #shrines, #quizzes, #links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #969387;
+    padding: 10px;
+}
+
+.container span {
+    color:#ffdd68;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+span {
+    color:#ffdd68;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 600px;
+    text-align: center;
+}
+
+.interests h4{
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+
+.interests {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #969387;
+    border: solid 8px #ffdd68;
+    max-width: 300px;
+    flex-wrap: wrap;
+    float: right;
+    padding: 5px;
+}
+
+.interests li {
+    padding: 2px;
+    font-weight: bold;
+}
+
+.updates {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #969387;
+    border: solid 8px #ffdd68;
+    max-width: 200px;
+    max-height: 200px;
+    padding: 10px;
+    flex-wrap: wrap;
+    overflow: auto;
+    float: left;
+}
+
+.updates p, .updates span {
+    font-size: 13px;
+}
+
+/* animation */
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+/* Footer */
+
+footer {
+    background-color:#969387;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+/* about page */
 .skell {
     max-height: 300px;
     max-width: 300px;
@@ -28,52 +252,6 @@
 }
 
 
-.interests h4{
-    padding-top: 15px;
-    padding-bottom: 10px;
-}
-
-
-.interests {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-color: #969387;
-    border: solid 8px #ffdd68;
-    max-width: 300px;
-    flex-wrap: wrap;
-    float: right;
-    padding: 5px;
-}
-
-.interests li {
-    padding: 2px;
-    font-weight: bold;
-}
-
-#about a:hover{
-  color: darkgoldenrod;
-  }
-
-.updates {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #969387;
-    border: solid 8px #ffdd68;
-    max-width: 200px;
-    max-height: 200px;
-    padding: 10px;
-    flex-wrap: wrap;
-    overflow: auto;
-    float: left;
-}
-
-.updates p, .updates span {
-    font-size: 13px;
-}
-
 .divider {
     max-width: 500px;
 }
@@ -82,6 +260,178 @@
     width: 100%;
     height: auto;
 }
+
+
+/* Projects */
+.examples {
+    max-height: 500px;
+    max-width: 500px;
+    padding-top: 10px;
+}
+
+.examples img {
+    height: auto;
+    width: 100%;
+    border: 3px solid #ffdd68;
+}
+
+.game {
+    height: 100%;
+    width: auto;
+}
+
+.game img {
+    max-height: 300px;
+    max-width: 300px;
+    border: 3px solid #ffdd68;
+}
+
+#projects h2, #projects h3, #projects h4 {
+    padding: 10px;
+}
+
+#projects h2 {
+    text-decoration: underline;
+    padding-top: 50px;
+}
+
+#projects ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#projects ul li, #random ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+#projects li a, #random li a{
+    background-color:#efcba2;
+    padding: 10px;
+    transition: 0.3s;
+    border-radius: 30%;
+}
+
+#projects li a:hover, #random li a:hover {
+    background-color:#B3987A;
+}
+
+#projects li a:active, #random li a:active {
+    background-color:#776651;
+}
+
+#projects .divider {
+    max-width: 600px;
+    padding: 10px;
+}
+
+#projects .divider img {
+    width: 100%;
+    height: auto;
+}
+
+/* Graphics page */
+
+summary {
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #efcba2;
+    font-weight:bold;
+    transition: 0.3s;
+    padding: 15px;
+}
+
+summary:hover {
+    color: #B3987A;
+}
+
+
+details img{
+    padding: 1px;
+}
+
+#graphics h2{
+    margin-bottom: 50px;
+}
+
+
+/* Shrines */
+
+#shrines a { 
+    color: #ffdd68;
+    transition: 0.3s;
+}
+
+#shrines a:hover {
+    color: darkgoldenrod;
+}
+
+/* Quizzes Page */
+
+#quizzes img {
+    max-height: 300px;
+    max-width: 300px;
+    padding: 3px;
+}
+
+.results {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Contact Page */
+.contact-places {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.contact-places img {
+    max-height: 150px;
+    max-width: 150px;
+    padding: 10px;
+}
+
+.email img:hover {
+    content: url('./resources/contact/tombstone-email-hover.png');
+}
+.github img:hover {
+    content: url('./resources//contact/tombstone-github-hover.png');
+}
+.tumblr img:hover {
+    content: url('./resources//contact/tombstone-tumblr-hover.png');
+}
+
+.spacehey img:hover {
+    content:url('./resources//contact/tombstone-spacehey-hover.png');
+}
+
+/* Links page */
+
+#graphic, #quirky, #random, #mine {
+    padding: 15px;
+}
+
+h3 {
+    padding: 10px;
+    text-decoration:underline;
+}
+
+.mybutton {
+    width: 50px;
+    height: 50px;
+    background-color:#efcba2;
+    font-size: 10px;
+}
+
+/* Media Queries */
 
 @media only screen and (max-width: 800px){
     .interests {

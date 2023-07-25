@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../resources/css/fiction.css" rel="stylesheet">
     <link href="../resources/css/textwriting.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../resources/other/fictionfavicon.gif">
     <title>Poetry</title>
 </head>
 <body>
@@ -16,13 +17,12 @@
                 <p>Click Below</p>
                 <a href="#family">Family</a>
                 <a href="#home">a question</a>
+                <a href="#topimage">Back to the top.</a>
             </div>
         </nav>
-        <div class="topimage"><img src="../resources/other/placeholder.png"></div>
+        <div id="topimage"><img src="../resources/other/placeholder.gif"></div>
         <div class="buttons">
             <button class="tablinks" onclick="window.location.href='../fiction.html'">Home</button>
-            <!-- <button class="tablinks" onclick="window.location.href='../fiction.html#two'">Original Fiction</button>
-            <button class="tablinks" onclick="openCity(event, 'three')" id="defaultOpen">Fanfiction</button> -->
             <button class="tablinks" onclick="">Main Page</button>
             <button class="tablinks" onclick="darkMode()">Dark Mode/Light Mode</button>
         </div>
@@ -82,24 +82,6 @@
 
     </main>
 
-    <script>
-        
-        // nav
-            function openNav() {
-            document.getElementById("sideNav").style.width = "400px";
-            }
-        
-            function closeNav() {
-            document.getElementById("sideNav").style.width = "0";
-            }
-
-            // Dark mode
-            function darkMode() {
-   var background = document.body;
-   background.classList.toggle("dark-mode");
-   let center = document.getElementById('center')
-   center.classList.toggle('dark');
-    }
-            </script>
+    <script src="../scripts.js"></script>
 </body>
 </html>
