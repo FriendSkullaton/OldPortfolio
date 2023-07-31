@@ -261,6 +261,14 @@ footer {
     height: auto;
 }
 
+#about a {
+    color:#ffdd68;
+}
+
+#about a:hover {
+    color:#B3987A;
+}
+
 
 /* Projects */
 .examples {

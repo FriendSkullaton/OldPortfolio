@@ -1,9 +1,0 @@
-#shrines a{ 
-    color: #ffdd68;
-    transition: 0.3s;
-}
-
-#shrines a:hover {
-    color: darkgoldenrod;
-}
-
