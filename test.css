@@ -274,7 +274,7 @@ footer {
 .examples {
     max-height: 500px;
     max-width: 500px;
-    padding-top: 10px;
+    padding: 10px;
 }
 
 .examples img {
