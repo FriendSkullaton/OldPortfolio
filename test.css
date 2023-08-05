@@ -115,8 +115,6 @@ nav li {
     border: solid 8px #ffdd68;
     background-color: #969387;
     padding: 10px;
-    max-width: 700px;
-    margin: auto;
     min-height: 800px;
 }
 
@@ -171,7 +169,6 @@ span {
     border: solid 8px #ffdd68;
     max-width: 300px;
     flex-wrap: wrap;
-    float: right;
     padding: 5px;
 }
 
@@ -192,11 +189,16 @@ span {
     padding: 10px;
     flex-wrap: wrap;
     overflow: auto;
-    float: left;
 }
 
 .updates p, .updates span {
     font-size: 13px;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 /* animation */
@@ -446,6 +448,6 @@ h3 {
         display: none;
     }
     .updates {
-        display: none;
+        max-width: 100%;
     }
 }
