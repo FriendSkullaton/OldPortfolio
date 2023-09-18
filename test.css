@@ -104,18 +104,18 @@ nav ul {
 }
 
 nav li {
-    padding: 15px;
+    padding: 0.938rem;
 }
 
 /* Main section */
 
 .tabcontent {
     margin: auto;
-    max-width: 700px;
     border: solid 8px #ffdd68;
     background-color: #969387;
     padding: 10px;
     min-height: 800px;
+    width: 700px;
 }
 
 
@@ -129,6 +129,10 @@ nav li {
     flex-direction: column;
     background-color: #969387;
     padding: 10px;
+}
+
+.grouping {
+    padding: 5px;
 }
 
 .container span {
@@ -263,11 +267,12 @@ footer {
     height: auto;
 }
 
-#about a {
+#about a, #sitemap a {
     color:#ffdd68;
+    transition: 0.3s;
 }
 
-#about a:hover {
+#about a:hover, #sitemap a:hover {
     color:#B3987A;
 }
 
@@ -449,5 +454,13 @@ h3 {
     }
     .updates {
         max-width: 100%;
+    }
+
+    nav ul {
+        padding: 5px;
+    }
+
+    nav li {
+        padding: 5px;
     }
 }
