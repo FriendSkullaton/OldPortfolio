@@ -1,6 +1,6 @@
-# portfolio-website
+# Previous Website
  
-This is my portfolio website. I designed it for neocities, so it has a y2k aesthetic to it.
+This was the first rendition to my website back when I first put it on neocities!
 
 ## Sections
 
